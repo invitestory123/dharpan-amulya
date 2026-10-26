@@ -82,7 +82,11 @@ export function Envelope({ onOpen }: { onOpen?: () => void }) {
           <p className="script mt-4 text-[3rem] leading-tight text-ink sm:text-[3.75rem]">
             You&apos;re invited
           </p>
-          <p className="caps mt-3 text-[0.5rem] text-olive/80">{invite.groom} &amp; {invite.bride}</p>
+          <div className="caps mt-3 flex flex-col items-center gap-0.5 text-[0.5rem] tracking-[0.25em] text-olive/80">
+            <span>{invite.groom}</span>
+            <span className="text-[0.45rem] text-gold/90">&amp;</span>
+            <span>{invite.bride}</span>
+          </div>
           {/* reserved space for the wax seal that sits on the split line */}
           <div aria-hidden="true" className="h-64 shrink-0" />
           <Flourish className="w-24 rotate-180 text-gold/50" />

@@ -9,12 +9,7 @@ export function Note() {
         <Divider className="mb-10" />
       </Reveal>
       <Reveal delay={0.1}>
-        <p className="caps text-[0.62rem] text-olive tracking-[0.28em]">
-          With the blessings of our families
-        </p>
-      </Reveal>
-      <Reveal delay={0.2}>
-        <div className="mx-auto mt-8 max-w-lg space-y-4 px-2 text-center text-ink/90 sm:text-lg">
+        <div className="mx-auto max-w-lg space-y-4 px-2 text-center text-ink/90 sm:text-lg">
           <p className="font-serif italic text-sepia text-base sm:text-lg">
             With the blessings of our families,
           </p>
@@ -30,7 +25,7 @@ export function Note() {
           </p>
         </div>
       </Reveal>
-      <Reveal delay={0.3}>
+      <Reveal delay={0.2}>
         <p className="script mt-10 text-3xl text-sepia sm:text-4xl">{invite.dayLine}</p>
         <p className="caps mt-4 text-[0.6rem] text-sepia">{invite.timeLine}</p>
       </Reveal>

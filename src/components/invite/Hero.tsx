@@ -95,13 +95,13 @@ export function Hero({ ready = true }: { ready?: boolean }) {
       </motion.p>
 
       <motion.h1
-        className="script mt-3 text-[2.65rem] leading-[1.1] text-ink sm:text-6xl md:text-7xl"
+        className="script mt-3 flex flex-col items-center text-[2.65rem] leading-[1.15] text-ink sm:text-6xl md:text-7xl"
         initial="hidden"
         animate={anim}
       >
-        <ScriptNames text={invite.groom} delay={0.85} trigger={anim} />
-        <span className="mx-2 text-gold sm:mx-4">&</span>
-        <ScriptNames text={invite.bride} delay={1.2} trigger={anim} />
+        <ScriptNames text={invite.groom} delay={0.85} trigger={anim} className="inline-block whitespace-nowrap" />
+        <span className="my-0.5 text-2xl text-gold sm:my-1 sm:text-3xl md:text-4xl">&</span>
+        <ScriptNames text={invite.bride} delay={1.2} trigger={anim} className="inline-block whitespace-nowrap" />
       </motion.h1>
 
       <motion.button
